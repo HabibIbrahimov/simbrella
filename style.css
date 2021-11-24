@@ -40,4 +40,18 @@ header {
           box-shadow: inset 0 0 0 3px #dfe4eb;
   border-radius: 12px;
 }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
