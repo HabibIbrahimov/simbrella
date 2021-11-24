@@ -90,6 +90,7 @@ header{
       }
      
       @media #{$media-tablet} {
+
         .page{
             flex-direction: column;
             
@@ -104,8 +105,29 @@ header{
                 h3{font-size: 21px;}
             }
         }
+        .flex-page{
+            
+            flex-direction: column !important;
+           .left{margin: 50%;
+               h2{margin: auto;
+                span{
+                    display: inline;
+                }
+            .list{
+                background: rgba(70, 70, 146, 0.6)
+            }
+                
+                
+               
+               
+           }
+            span{
+                
+                width: fit-content;
+            }
+        }
+        }
       }
-
       .footer-page{
         background-image:url("https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg");
         min-height: 500px;
@@ -128,6 +150,7 @@ header{
         opacity: 1;
         transform: translate(0, 0);
         color: white;
+        font-size: 54px;
         span{
             display: block;
             max-width: 520px;
@@ -135,20 +158,13 @@ header{
         }
         }
         }
-        .list{
-            width: calc(50% - 20px);
-            padding: 0 20px;
-            border-radius: 4px;
-            background: rgba(45, 49, 146, 0.6);;
+        .list{ position:initial; background-color: rgba(45, 49, 146, 0.6); filter: alpha(opacity=60); opacity: 0.6; 
             ul{
-                max-width: 520px;
-                margin: 0 auto;
                 list-style: none;
                 li{
                     opacity: 1;
                     transform: translate(0, 0);
-                    padding: 32px 0;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                    padding: 40px 40px;
                     h3{
                         color: white;
                     }

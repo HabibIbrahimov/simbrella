@@ -108,6 +108,29 @@ h3 {
   .page .page-child h3 {
     font-size: 21px;
   }
+  .flex-page {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .flex-page .left {
+    margin: 50%;
+  }
+  .flex-page .left h2 {
+    margin: auto;
+  }
+  .flex-page .left h2 span {
+    display: inline;
+  }
+  .flex-page .left h2 .list {
+    background: rgba(70, 70, 146, 0.6);
+  }
+  .flex-page .left span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .footer-page {
@@ -148,6 +171,7 @@ h3 {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   color: white;
+  font-size: 54px;
 }
 
 .footer-page .flex-page h2 span {
@@ -157,15 +181,13 @@ h3 {
 }
 
 .footer-page .list {
-  width: calc(50% - 20px);
-  padding: 0 20px;
-  border-radius: 4px;
-  background: rgba(45, 49, 146, 0.6);
+  position: initial;
+  background-color: rgba(45, 49, 146, 0.6);
+  filter: alpha(opacity=60);
+  opacity: 0.6;
 }
 
 .footer-page .list ul {
-  max-width: 520px;
-  margin: 0 auto;
   list-style: none;
 }
 
@@ -173,8 +195,7 @@ h3 {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-  padding: 32px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px 40px;
 }
 
 .footer-page .list ul li h3 {
