@@ -51,7 +51,7 @@ header{
         color: #222;
     }
     .page{
-        display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: stretch;
@@ -106,11 +106,53 @@ header{
         }
       }
 
-      .footer-page {
-        background-image: url("https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg");
+      .footer-page{
+        background-image:url("https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg");
         min-height: 500px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        .flex-page{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+        position: relative;
+        h2{   
+        opacity: 1;
+        transform: translate(0, 0);
+        color: white;
+        span{
+            display: block;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        }
+        }
+        .list{
+            width: calc(50% - 20px);
+            padding: 0 20px;
+            border-radius: 4px;
+            background: rgba(45, 49, 146, 0.6);;
+            ul{
+                max-width: 520px;
+                margin: 0 auto;
+                list-style: none;
+                li{
+                    opacity: 1;
+                    transform: translate(0, 0);
+                    padding: 32px 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                    h3{
+                        color: white;
+                    }
+                }
+            }
+        }
       }
